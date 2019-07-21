@@ -1,0 +1,9 @@
+.todo_list {
+    margin-left: -3em;
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}

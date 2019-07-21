@@ -1,0 +1,20 @@
+:root {
+    --color-gray-dark: #393d3f;
+    --color-gray: #5D6061;
+    --color-gray-light: #bbbbbb;
+    --color-white-dark: #F1F2F3;
+    --color-floral: #FFF8F0;
+    --color-spring_bud: #bce784;
+    --color-teal_dear: #9bdeac;
+    --color-aquamarine: #5dd39e;
+    --color-jungle: #1b998b;
+    --color-jungle-dark: #198C7F;
+    --color-jungle-dark2: #197366;
+
+    --color-rose:  #D12366;
+    --color-raspberry: #930439;
+
+
+    --gradient_green: linear-gradient(-90deg, #1b998b, #5dd39e);
+    --gradient_red: linear-gradient(-90deg, #930439, #D12366);
+}

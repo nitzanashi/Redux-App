@@ -1,0 +1,59 @@
+@import "../../static/styles/index.css";
+
+.btn, .btn_text,
+.btn::after, .btn_text::after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn {
+  margin: 1em;
+  outline: none;
+  --text-color: var(--color-floral);
+  color: var(--text-color);
+  background: var(--bg-color);
+  border-radius: 1em;
+  padding: 0.8em;
+  width: 110px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  height: 35px;
+}
+
+.btn:hover{
+  color: var(--text-color);
+  -webkit-filter: contrast(1.5);
+  filter: contrast(1.25);
+}
+
+.btn:active {
+  box-shadow: inset 2px -7px 11px rgba(80, 92, 51, 0.4);
+}
+
+.btn_primary {
+  --bg-color: linear-gradient(-90deg, #1b998b, #5dd39e);
+  border: 1px solid rgba(27, 153, 139, .5);
+
+}
+
+.btn_secondary {
+  --bg-color: linear-gradient(-90deg, #930439, #D12366);
+  border: 1px solid rgba(147, 4, 57, .5);
+}
+
+.btn_text{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  font-size: 1em;
+  width: 100%;
+}
+
+.btn_text:active{
+  font-size: 0.95em;
+}

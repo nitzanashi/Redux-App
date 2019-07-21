@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from 'react';
+import * as styles from './App.module.css';
+import {Counter} from './components/Counter';
+import AddTodo from "./components/AddTodo";
+import VisibilityFilter from './components/VisibilityFilter'
+import VisbilityTodos from './components/TodoList/HOC';
+import WindowWidth from "./components/WindowWidth";
+import Header from "./components/Header";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    useEffect(() => {
+       document.title = 'Redux App';
+    });
 
+    return (
+        <div className={styles.App}>
+            <Header/>
+            <div className={styles.body}>
+                <WindowWidth/>
+                <Counter/>
+                <VisibilityFilter/>
+                <AddTodo/>
+                <VisbilityTodos/>
+            </div>
+        </div>
+    )
+};
 export default App;

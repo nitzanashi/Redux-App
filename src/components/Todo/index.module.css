@@ -1,0 +1,36 @@
+@import "../../static/styles/index.css";
+
+.todo,
+.todo::after {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+.todo {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1rem;
+    text-align: left;
+    --bg-color: var(--color-jungle);
+    margin: 0.2rem;
+    width: 40vw;
+    background: var(--bg-color);
+    font-size: 0.7em;
+    border-bottom: 5px solid var(--color-jungle-dark2);
+}
+
+.todo:hover{
+    transform: skew(-10deg);
+}
+
+.completed {
+    text-decoration: line-through;
+    --bg-color: var(--color-rose);
+    border-bottom: 5px solid var(--color-raspberry);
+
+}
+
